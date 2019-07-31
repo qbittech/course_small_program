@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/class/class",
+    "pages/order/order",
+    "pages/poster/poster",
+    "pages/explain/explain",
+    "pages/payFinish/payFinish"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "resizable": true,
+  "sitemapLocation": "sitemap.json"
+}

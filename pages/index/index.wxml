@@ -1,0 +1,400 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 海报 -->
+  <image class='poster' src='{{headImg}}' mode="widthFix"></image>
+  <view class='slogan'>现在报名，抢占7月28日暑假上课名额</view>
+
+  <!-- 拼团价 -->
+  <view class='course-title-wrap'>
+    <view class='course-price'>
+      <view class="price-left">
+        <text class='group-title'>3人拼团价</text>
+        <text class='group-price'>￥{{groupPrice}}</text>
+        <text class='original-price'>￥{{oldPrice}}</text>
+      </view>
+      <view class='price-right'>剩余 {{restNum}} 名额</view>
+    </view>
+    <text class='course-title'>线上4节编程课</text>
+  </view>
+
+  <!-- 无理由退 -->
+  <view class='course-notice' data-id='open1' bindtap="showPopup">
+    <view class='notice-left'>
+      <text class="iconfont icon-gouhao"></text>
+      <text class='text'>7天无理由退</text>
+      <text class="iconfont icon-gouhao"></text>
+      <text class='text'>拼团说明</text>
+      <text class="iconfont icon-gouhao"></text>
+      <text class='text'>上课说明</text>
+    </view>
+    <text class="notice-right iconfont icon-youjiantou"></text>
+  </view>
+
+  <view class='divider'></view>
+  <view class='group-num'>{{groupNum}}在拼团，可直接参与</view>
+
+  <!-- 去参团 -->
+  <view class='{{groupClass}}'>
+    <view class='join-group-left'>
+      <image src='{{groupImg}}'></image>
+      <text>{{groupName}}</text>
+    </view>
+    <view class='join-group-right'>
+      <view class='join-group-countdown'>
+        <view class='lest-num'><text>只差</text><text class='orange'>1人</text><text>成团</text></view>
+        <text class='timer'>剩余{{timeLeft}}</text>
+      </view>
+      <button class='join-group-button' data-id='group1' open-type="getUserInfo" bindgetuserinfo="toPageClass">去参团</button>
+    </view>
+  </view>
+
+  <view class='divider'></view>
+  <!-- 拼团步骤 -->
+  <view class='step-wrap step-group'>
+    <view class='icon-list'>
+      <text class="iconfont icon-youshuangjiantou"></text>
+      <text class="iconfont icon-youshuangjiantou"></text>
+      <text class="iconfont icon-youshuangjiantou"></text>
+    </view>
+    <view class='text-list'>
+      <view class='text-item'>
+        <text class="iconfont icon-pintuankaituancantuan"></text>
+        <text class='text'>开团/参团</text>
+        <text class='text'>完成支付</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-ziyuan" style='font-size: 42rpx;'></text>
+        <text class='text'>团人数达3人</text>
+        <text class='text'>拼团成功</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-weixin"></text>
+        <text class='text'>查看老师联系方式</text>
+        <text class='text'>关注微信公众号</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-prepare-model"></text>
+        <text class='text'>老师指导您</text>
+        <text class='text'>完成课前准备</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='divider'></view>
+  <!-- 教师简介 -->
+  <view class='teacher-brief-wrap'>
+    <view class='teahcer-title'>授课老师简介</view>
+    <view class='teacher-brief' data-id='open2' bindtap="showPopup">
+      <view class='teacher-brief-left'>
+        <image src='{{teacherHeadImg}}'></image>
+        <view class='teacher-name'>
+          <text class='name'>{{teacherName}}</text>
+          <text class='title'>{{teacherPosition}}</text>
+        </view>
+      </view>
+      <text class="teacher-brief-right iconfont icon-youjiantou"></text>
+    </view>
+  </view>
+
+  <view class='divider'></view>
+  <!-- 礼盒 -->
+  <image class='gift' src='../../static/image/gift.jpg' mode="widthFix"></image>
+
+  <view class='divider'></view>
+  <!-- 为什么学编程 -->
+  <view class='course-content-title'>
+    <text class='big'>为什么学编程</text>
+    <text class='small'>选择粤嵌的4大理由</text>
+  </view>
+
+  <!-- 4大理由 -->
+  <view class='course-reason'>
+    <view class='reason-item'>
+      <view class='reason-icon'>
+        <text class="iconfont icon-kechengdingzhi"></text>
+      </view>
+      <view class='reason-title'>定制化教学</view>
+      <view class='reason-desc'>根据孩子情况量身</view>
+      <view class='reason-desc'>定制课程</view>
+    </view>
+    <view class='reason-item'>
+      <view class='reason-icon'>
+        <text class="iconfont icon-ketang"></text>
+      </view>
+      <view class='reason-title'>趣味课堂</view>
+      <view class='reason-desc'>游戏化教学，让课堂</view>
+      <view class='reason-desc'>变得更有趣</view>
+    </view>
+    <view class='reason-item'>
+      <view class='reason-icon'>
+        <text class="iconfont icon-pingtaiguanli"></text>
+      </view>
+      <view class='reason-title'>多样化复习平台</view>
+      <view class='reason-desc'>方便孩子巩固学习，</view>
+      <view class='reason-desc'>自我提升</view>
+    </view>
+    <view class='reason-item'>
+      <view class='reason-icon'>
+        <text class="iconfont icon-huangguanguanjundiyihuiyuan"></text>
+      </view>
+      <view class='reason-title'>强大的品牌</view>
+      <view class='reason-desc'>粤嵌10余年品牌，</view>
+      <view class='reason-desc'>研发+培训一体</view>
+    </view>
+  </view>
+
+  <!-- 都在学 -->
+  <view class='all-study'>
+    <view class='all-study-title'>全国1550万孩子都在学编程</view>
+    <view class='all-study-content'>
+      <image src='../../static/image/study_left.png' mode="widthFix"></image>
+      <view>
+        <view class='study-block'>
+          <view class='study-title'>2018年</view>
+          <view class='study-desc'>浙江省将信息科技作为选考科目</view>
+          <view class='study-desc'>山东省将编程加入小学六年级教材</view>
+          <view class='study-desc'>南京、苏州、天津等地将编程纳入考试</view>
+          <view class='study-desc'>重庆市要求3-6年级开始学习编程</view>
+        </view>
+        <view class='study-block'>
+          <view class='study-title'>2017年</view>
+          <view class='study-desc'>《新一代人工智能发展规划》提出在中小学推广编程教育</view>
+        </view>
+      </view>
+    </view>
+    <view class='all-study-bottom'>英语让孩子走向世界，编程让孩子通往未来</view>
+  </view>
+
+  <view class='divider'></view>
+  <!-- 课程内容 -->
+  <view class='course-content-title'>
+    <text class='big'>课程内容</text>
+    <text class='small'>完整科学的进阶体系</text>
+  </view>
+
+  <!-- 符合国家标准 -->
+  <view class='standard-wrap'>
+    <view class='standard'>
+      <text class="standard-left iconfont icon-iconfront-"></text>
+      <view class='standard-right'>
+        <text class='padding-left'>对标国际公认 K12 阶段计算机科学标准</text>
+        <text>《美国计算机教师协会标准》(CSTA)</text>
+      </view>
+    </view>
+    <view class='standard'>
+      <text class="standard-left iconfont icon-iconfront-"></text>
+      <view class='standard-right'>
+        <text class='padding-left'>结合2017年颁布的《信息技术课程标准》</text>
+      </view>
+    </view>
+    <view class='standard'>
+      <text class="standard-left iconfont icon-iconfront-"></text>
+      <view class='standard-right'>
+        <text class='padding-left'>结合中国电子学会出台的</text>
+        <text>《全国青少年软件编程等级考试标准》</text>
+      </view>
+    </view>
+
+    <view class='standard-title'>
+      <image src='../../static/image/standard_title.png' mode="widthFix"></image>
+      <text>美国 CSTA K-12 计算机科学标准</text>
+      <image src='{{courseImg}}' mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class='divider'></view>
+  <!-- 优质师资 -->
+  <view class='course-content-title'>
+    <text class='big'>优质师资</text>
+    <text class='small'>一切为了孩子</text>
+  </view>
+  <view class='teacher-list'>
+    <view class='teacher-item'>
+      <image src='../../static/image/teacher_1.png' mode="widthFix"></image>
+      <view class='title'>余爽</view>
+      <view class='desc'>人气编程讲师</view>
+    </view>
+    <view class='teacher-item'>
+      <image src='../../static/image/teacher_2.png' mode="widthFix"></image>
+      <view class='title'>冯盈盈</view>
+      <view class='desc'>人气编程讲师</view>
+    </view>
+    <view class='teacher-item'>
+      <image src='../../static/image/teacher_3.png' mode="widthFix"></image>
+      <view class='title'>杨春</view>
+      <view class='desc'>人气编程讲师</view>
+    </view>
+    <view class='teacher-item'>
+      <image src='../../static/image/teacher_4.png' mode="widthFix"></image>
+      <view class='title'>刘大钊</view>
+      <view class='desc'>人气编程讲师</view>
+    </view>
+    <view class='teacher-item'>
+      <image src='../../static/image/teacher_5.png' mode="widthFix"></image>
+      <view class='title'>梁志荣</view>
+      <view class='desc'>人气编程讲师</view>
+    </view>
+    <view class='teacher-item'>
+      <image src='../../static/image/teacher_6.png' mode="widthFix"></image>
+      <view class='title'>刘嘉敏</view>
+      <view class='desc'>人气编程讲师</view>
+    </view>
+  </view>
+
+  <view class='divider'></view>
+  <!-- 上课方式 -->
+  <view class='course-style'>
+    <text class='big'>上课方式灵活便利 时间高效利用</text>
+    <text class='small'>电脑+网线就能学，每晚均可上课</text>
+    <image src='../../static/image/sleep.jpg' mode="widthFix"></image>
+  </view>
+
+  <view class='divider'></view>
+  <!-- 家长评价 -->
+  <view class='course-style'>
+    <text class='big'>关于粤嵌小创客 他们想说</text>
+    <text class='small'>以下来自家长的真实评论</text>
+    <view class='evaluation-list'>
+      <view class='evaluation-item'>体验很棒</view>
+      <view class='evaluation-item'>教师很好</view>
+      <view class='evaluation-item'>5A教学服务</view>
+      <view class='evaluation-item'>平台超赞</view>
+    </view>
+    <image src='{{evaluateImg}}' mode="widthFix"></image>
+  </view>
+
+  <view class='divider'></view>
+  <!-- 常见问题 -->
+  <view class='course-content-title'>
+    <text class='big'>常见问题</text>
+    <text class='small'>上课方式灵活便利</text>
+  </view>
+  <view class='question-item'>
+    <view class='question-title'>第2课开课前无条件退款</view>
+    <view class='question-answer'>入门课总共5节课，编程教辅礼盒将于开课前1周陆续寄出，若礼盒已寄出则无法退款。</view>
+  </view>
+  <view class='question-item'>
+    <view class='question-title'>礼盒物流查询</view>
+    <view class='question-answer'>编程教辅礼盒将于开课前1周陆续寄出，请注意查看礼盒的物流信息。</view>
+  </view>
+  <view class='question-item'>
+    <view class='question-title'>有电脑、iPad就能上课</view>
+    <view class='question-answer'>下载学生客户端就能上课，支持Win7及以上电脑、苹果电脑、iPad。</view>
+  </view>
+
+  <!-- 可获服务 -->
+  <view class='service-wrap'>
+    <image src='{{footImg}}' mode="widthFix"></image>
+    <view class='service-content'>
+      <view class='service-price'>9.9<text>元</text></view>
+      <view class='p'>即可获得以下全部服务</view>
+      <view class='service-item'>
+        <text class="iconfont icon-gou"></text>
+        <text class='notice'>5次课程，世界机器人冠军领衔授课</text>
+      </view>
+      <view class='service-item'>
+        <text class="iconfont icon-gou"></text>
+        <text class='notice'>专属陪学，微信在线答疑，问题不过夜</text>
+      </view>
+      <view class='service-item'>
+        <text class="iconfont icon-gou"></text>
+        <text class='notice'>30-45分钟一节课，孩子坐得住吃得透</text>
+      </view>
+      <view class='service-item'>
+        <text class="iconfont icon-gou"></text>
+        <text class='notice'>孩子做出刷爆朋友圈的编程作品</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class='footer'>
+  <!-- 轮播 -->
+  <view class='slide-wrap'>
+    <swiper class='slide-list' indicator-dots="{{indicatorDots}}"
+  autoplay="true" interval="3000" duration="1000" vertical="true" circular="true">
+      <swiper-item class='slide-item' wx:for="{{swiperData}}" wx:key="id">
+        <image src='{{item.headimgurl}}' mode="widthFix"></image>
+        <text>{{item.nickname}}</text>
+        <text>刚刚拼团成功了</text>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 按钮 -->
+  <view class='footer-btn-list'>
+    <button class='footer-btn btn-border service-btn' open-type="contact">
+      <text class="iconfont icon-lianximaijia"></text>
+      <text class='gray small'>咨询</text>
+    </button>
+    <view class='footer-btn btn-border' data-id='open3' bindtap="showPopup">
+      <text class='black big'>￥{{alonePrice}}</text>
+      <text class='gray small'>单独购买</text>
+    </view>
+    <button class='footer-btn btn-bg' data-id='group2' open-type="getUserInfo" bindgetuserinfo="toPageClass">
+      <text class='white big'>￥{{groupPrice}}</text>
+      <text class='white small'>我要开团</text>
+    </button>
+  </view>
+</view>
+
+<!-- 活动说明 -->
+<view class='popup-outer' data-id='close1' hidden="{{showNotice}}" bindtap="closePopup">
+  <view class='popup-inner-bottom' catchtap="stayPopup">
+    <view class='popup-title'>活动说明</view>
+    <view class='activity-content'>
+      <view class='activity-item'>
+        <view class='activity-title'>
+          <view class='title-left'>
+            <text class="iconfont icon-gouhao"></text>
+            <text class='text'>7天无理由退</text>
+          </view>
+        </view>
+        <view class='activity-notice'>日常班开课7天内不满意可全额退款，寒暑假班开课2天内不满意可全额退款。</view>
+      </view>
+      <view class='activity-item'>
+        <view class='activity-title'>
+          <view class='title-left'>
+            <text class="iconfont icon-gouhao"></text>
+            <text class='text'>拼团玩法说明</text>
+          </view>
+          <view class='title-right' bindtap="toPageExplain">
+            <text class='text'>查看详情</text>
+            <text class="iconfont icon-youjiantou"></text>
+          </view>
+        </view>
+        <view class='activity-notice'>拼团时间24小时，24小时内未成团将由微信原路退回。</view>
+      </view>
+      <view class='activity-item'>
+        <view class='activity-title'>
+          <view class='title-left'>
+            <text class="iconfont icon-gouhao"></text>
+            <text class='text'>上课说明</text>
+          </view>
+        </view>
+        <view class='activity-notice'>拼团成功后，需关注[粤嵌小创客在线]公众号，才能正常上课！</view>
+      </view>
+    </view>
+    <view class='popup-button' data-id='hide1' bindtap="hidePopup">知道了</view>
+  </view>
+</view>
+
+<!-- 教师介绍 -->
+<view class='popup-outer' data-id='close2' hidden="{{showTeacher}}" bindtap="closePopup">
+  <view class='popup-inner-bottom' catchtap="stayPopup">
+    <image src='{{teacherIntroImg}}' mode="widthFix"></image>
+    <view class='popup-button' data-id='hide2' bindtap="hidePopup">确定</view>
+  </view>
+</view>
+
+<!-- 单独购买 -->
+<view class='popup-outer' data-id='close3' hidden="{{showAlone}}" bindtap="closePopup">
+  <view class='popup-inner-bottom' catchtap="stayPopup">
+    <view class='popup-title'>活动说明<text class='popup-close' data-id='hide3' bindtap="hidePopup">X</text></view>
+    <view class='alone-content'>
+      <text>确定单独购买，而不选择更便宜的拼团？</text>
+      <button class='popup-button' data-id='alone' open-type="getUserInfo" bindgetuserinfo="toPageClass">确定单独购买</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,119 @@
+.container {
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+.current-class{
+  padding: 30rpx 0;
+  width: 100%;
+  text-align: center;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+.current-class .iconfont{
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.tip{
+  padding: 20rpx 0;
+  height: 22rpx;
+  line-height: 22rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #999;
+}
+.class-wrap{
+  margin: 0 3%;
+  padding: 50rpx 40rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+  box-shadow: 0 1rpx 10rpx 1rpx rgba(0, 0, 0, .1);
+}
+.class-top{
+  display: flex;
+  justify-content: space-between;
+}
+.class-title{
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 32rpx;
+}
+.class-info{
+  margin: 20rpx 0 24rpx 0;
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.class-info .dot{
+  margin: 0 6rpx;
+}
+.class-right{
+  margin-top: 12rpx;
+  font-size: 40rpx;
+  color: #999;
+}
+.teacher-list{
+  display: flex;
+  justify-content: flex-start;
+}
+.teacher{
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 60rpx;
+}
+.teacher image{
+  margin-right: 14rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+}
+.teacher-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.teacher-info .name{
+  display: block;
+  margin-bottom: 10rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.teacher-info .position{
+  display: block;
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.popup-outer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 1;
+}
+.popup-item{
+  padding: 40rpx 0;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.popup-item:last-child{
+  border-bottom: none;
+}
+

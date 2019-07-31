@@ -1,0 +1,71 @@
+<!--payFinish.wxml-->
+<view class='container'>
+  <!-- 课程信息 -->
+  <view class='success-top'>
+    <view class='success-left'>
+      <image src='../../static/image/course.jpg' mode="widthFix"></image>
+      <view class='success-course'>
+        <view class='title'>线上4节编程课</view>
+        <view class='group'>3人团</view>
+      </view>
+    </view>
+    <view class='success-right'>
+      <image src='../../static/image/success.png' mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class='divider'></view>
+  <view class='wrap'>
+    <!-- 剩余时间 -->
+    <view class='rest' wx:if='{{showCountdown}}'>
+      <view class='rest-title'>还差{{number}}人，快去邀请好友</view>
+      <view class='rest-time'>
+        <text class='line'></text>
+        <text class='text'>剩余</text>
+        <text class='num'>{{hour}}</text>
+        <text class='dot'>:</text>
+        <text class='num'>{{minute}}</text>
+        <text class='dot'>:</text>
+        <text class='num'>{{second}}</text>
+        <text class='text'>结束</text>
+        <text class='line'></text>
+      </view>
+    </view>
+
+    <!-- 用户头像 -->
+    <view class='user-list'>
+      <view class='user-item'>
+        <image src='{{avatarOne}}' mode="widthFix"></image>
+        <text class='name'>团长</text>
+      </view>
+      <view class='user-item'>
+        <image src='{{avatarTwo}}' mode="widthFix" wx:if='{{showAvatarTwo}}'></image>
+        <text class="iconfont icon-tianjiayonghu" wx:else></text>
+      </view>
+      <view class='user-item'>
+        <image src='{{avatarThree}}' mode="widthFix" wx:if='{{showAvatarThree}}'></image>
+        <text class="iconfont icon-tianjiayonghu" wx:else></text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 按钮 -->
+  <view class='block'>
+    <view class='block-title red'>开课前务必要添加老师哦</view>
+    <view class='btn-list'>
+      <button class='btn long' open-type="contact">去添加班主任老师</button>
+    </view>
+  </view>
+  <view class='block'>
+    <view class='block-title yellow'>快去邀请好友来一起拼团吧</view>
+    <view class='btn-list'>
+      <view class='btn short red-bg' bindtap="toPagePoster"><text class="iconfont icon-haibao"></text>生成加速海报</view>
+      <button class='btn short green-bg' open-type="share"><text class="iconfont icon-weixin"></text>分享到微信群</button>
+    </view>
+  </view>
+
+  <!-- 玩法说明 -->
+  <view class='notice' bindtap="toPageExplain">拼团玩法说明<text class="iconfont icon-youjiantou"></text></view>
+
+  <view class='tip'>如有编程礼盒，将在开课前1周左右寄出</view>
+</view>

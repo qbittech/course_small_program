@@ -1,0 +1,121 @@
+<!--order.wxml-->
+<view class='container'>
+  <!-- 单独购买 -->
+  <view class='step-wrap step-alone' wx:if="{{showAlone}}">
+    <view class='icon-list'>
+      <text class="iconfont icon-youshuangjiantou"></text>
+      <text class="iconfont icon-youshuangjiantou"></text>
+    </view>
+    <view class='text-list'>
+      <view class='text-item'>
+        <text class="iconfont icon-pintuankaituancantuan"></text>
+        <text class='text'>支付49元</text>
+        <text class='text'>购买课程</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-weixin"></text>
+        <text class='text'>查看老师联系方式</text>
+        <text class='text'>关注微信公众号</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-prepare-model"></text>
+        <text class='text'>老师指导您</text>
+        <text class='text'>完成课前准备</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 团购 -->
+  <view class='step-wrap step-group' wx:else>
+    <view class='icon-list'>
+      <text class="iconfont icon-youshuangjiantou"></text>
+      <text class="iconfont icon-youshuangjiantou"></text>
+      <text class="iconfont icon-youshuangjiantou"></text>
+    </view>
+    <view class='text-list'>
+      <view class='text-item'>
+        <text class="iconfont icon-pintuankaituancantuan"></text>
+        <text class='text'>开团/参团</text>
+        <text class='text'>完成支付</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-ziyuan" style='font-size: 42rpx;'></text>
+        <text class='text'>团人数达3人</text>
+        <text class='text'>拼团成功</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-weixin"></text>
+        <text class='text'>查看老师联系方式</text>
+        <text class='text'>关注微信公众号</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-prepare-model"></text>
+        <text class='text'>老师指导您</text>
+        <text class='text'>完成课前准备</text>
+      </view>
+    </view>
+  </view>
+  <view class='divider'></view>
+
+  <!-- 课程信息 -->
+  <view class='class-wrap'>
+    <view class='class-top'>
+      <view class='class-title'>{{courseTitle}}</view>
+      <view class='class-info'>7月30日开班<text class="dot">·</text>每晚19:00开课<text class="dot">·</text>一天一课</view>
+    </view>
+    <view class="class-price">
+      <text wx:if="{{showAlone}}">单独购</text><text class='tuan-price' wx:else>3人拼团价</text><text>￥{{finalPrice}}</text>
+    </view>
+  </view>
+
+  <!-- 手机号码 -->
+  <view class='block'>
+    <view class='block-title'>家长手机号</view>
+    <view class='block-content'>
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if="{{!hasToken}}">请输入手机号，仅用于班主任家访</button>
+      <view wx:else>
+        <input type='number' placeholder='请输入手机号，仅用于班主任家访' wx:if="{{hasPhoneNumber}}" value='{{phoneNumber}}' />
+        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" wx:else>请输入手机号，仅用于班主任家访</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 支付方式 -->
+  <view class='block'>
+    <view class='block-title'>支付方式</view>
+    <view class='block-content'>
+      <view class='left'>
+        <text class="iconfont icon-weixinzhifu"></text>
+        <text class='text'>微信支付</text>
+      </view>
+      <text class="right iconfont icon-gou"></text>
+    </view>
+  </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class='footer'>
+  <!-- 轮播 -->
+  <view class='slide-wrap'>
+    <swiper class='slide-list' indicator-dots="{{indicatorDots}}"
+  autoplay="true" interval="3000" duration="1000" vertical="true" circular="true">
+      <swiper-item class='slide-item' wx:for="{{swiperData}}" wx:key="id">
+        <image src='{{item.headimgurl}}' mode="widthFix"></image>
+        <text>{{item.nickname}}</text>
+        <text>刚刚拼团成功了</text>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 按钮 -->
+  <view class='footer-wrap'>
+    <view class='footer-price'>
+      <view class='price-top'>
+        <text class='big'>￥{{finalPrice}}</text>
+        <text class='small'>￥{{oldPrice}}</text>
+      </view>
+      <view class='price-bottom'>不满意可退款</view>
+    </view>
+    <view class='footer-btn' bindtap="submitOrder">确认支付</view>
+  </view>
+</view>

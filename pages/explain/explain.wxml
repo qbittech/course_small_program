@@ -1,0 +1,94 @@
+<!--explain.wxml-->
+<view class="container">
+  <view class='step-img'>
+    <image src='../../static/image/step.png' mode="widthFix"></image>
+  </view>
+  <!-- 拼团步骤 -->
+  <!-- <view class='step-wrap step-group'>
+    <view class='icon-list'>
+      <text class="iconfont icon-youshuangjiantou"></text>
+      <text class="iconfont icon-youshuangjiantou"></text>
+      <text class="iconfont icon-youshuangjiantou"></text>
+    </view>
+    <view class='text-list'>
+      <view class='text-item'>
+        <text class="iconfont icon-pintuankaituancantuan"></text>
+        <text class='text'>开团/参团</text>
+        <text class='text'>完成支付</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-ziyuan" style='font-size: 42rpx;'></text>
+        <text class='text'>团人数达3人</text>
+        <text class='text'>拼团成功</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-weixin"></text>
+        <text class='text'>查看老师联系方式</text>
+        <text class='text'>关注微信公众号</text>
+      </view>
+      <view class='text-item'>
+        <text class="iconfont icon-prepare-model"></text>
+        <text class='text'>老师指导您</text>
+        <text class='text'>完成课前准备</text>
+      </view>
+    </view>
+  </view> -->
+
+  <!-- 说明 -->
+  <!-- <view class='explain'>
+    <view class='title'>什么是拼团？</view>
+    <view class='content'>多人拼团是指由多人一起拼单购买的团购活动，通过拼团买家可以享受比一般网购更低的折扣。</view>
+  </view>
+  <view class='explain'>
+    <view class='title'>怎样算拼团成功？</view>
+    <view class='content'>每个团的有效期为24小时，在有效期内达到3人或以上参与拼团，即可算拼团成功。</view>
+  </view>
+  <view class='explain'>
+    <view class='title'>拼团失败怎么办？</view>
+    <view class='content'>若24小时仍未凑够3人，则拼团失败。系统会自动由微信原路退回。</view>
+  </view> -->
+
+  <!-- 步骤 -->
+  <!-- <view class='explain-step'>
+    <view class='title'>拼团流程</view>
+    <view class='step-item'>
+      <view class="step-title">01<text>点击开团/参团</text></view>
+      <view class='step-bg'>
+        <view class='step-notice'>在课程拼团首页点击【去参团】或【我要开团】参与拼团</view>
+        <image src='../../static/image/sleep.png' mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view class='step-item'>
+      <view class="step-title">02<text>完成支付</text></view>
+      <view class='step-bg'>
+        <view class='step-notice'>填写手机号、选择上课时间等信息，完成付款即可开团。</view>
+        <image src='../../static/image/sleep.png' mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view class='step-item'>
+      <view class="step-title">03<text>分享好友</text></view>
+      <view class='step-bg'>
+        <view class='step-notice'>分享给好友，将课程推荐给好友，等待还有参团。</view>
+        <image src='../../static/image/sleep.png' mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view class='step-item'>
+      <view class="step-title">04<text>好友参团</text></view>
+      <view class='step-bg'>
+        <view class='step-notice'>好友打开页面，点击右下角【我要参团】，完成支付后，即成功参团。</view>
+        <image src='../../static/image/sleep.png' mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view class='step-item'>
+      <view class="step-title">05<text>查收成团信息</text></view>
+      <view class='step-bg'>
+        <view class='step-notice'>24小时内拼购3人，即拼团成功，您将收到短息和服务信息，按照提示完成开课流程即可上课。</view>
+        <image src='../../static/image/sleep.png' mode="widthFix"></image>
+      </view>
+    </view>
+  </view> -->
+</view>
