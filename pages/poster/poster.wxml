@@ -1,0 +1,28 @@
+<!--poster.wxml-->
+<view class="container">
+  <view class='poster-title'>
+    <text class="iconfont icon-down-jiantou"></text>
+    <text class="iconfont icon-down-jiantou"></text>
+    长按下方图片 保存到相册
+    <text class="iconfont icon-down-jiantou"></text>
+    <text class="iconfont icon-down-jiantou"></text>
+  </view>
+  <view class='poster-title'>分享给好友，邀请成功率更高</view>
+  <view class='poster-img'>
+    <image src='{{poster}}' mode="widthFix" bindlongpress="savePoster"></image>
+  </view>
+  <view class='tip'>使用推荐语可提升80%成功率</view>
+  <view class='btn open-btn' bindtap="openPopup">获取朋友圈推荐语</view>
+</view>
+
+<!-- 弹出框 -->
+<view class='popup-outer' hidden="{{showPopup}}" bindtap="closePopup">
+  <view class='popup-inner-middle' catchtap="stayPopup">
+    <view class='popup-title'><text class='popup-close' bindtap="closePopup">X</text></view>
+    <view class='popup-content'>
+      <view>孩子在网上学的编程课，喜欢的不行，不仅在创作中学会了用编程的方式解决问题，还提高了学习的自主性😊</view>
+      <view>感兴趣的快来一起学，和我家娃一起讨论作品，扫下图二维码就能报名✋</view>
+      <button class='btn close-btn' bindtap='copyText'>点击复制推荐语</button>
+    </view>
+  </view>
+</view>

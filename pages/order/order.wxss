@@ -1,0 +1,237 @@
+/* order.wxss */
+.container{
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+.step-wrap{
+  position: relative;
+  padding: 24rpx 0;
+  background-color: #fff;
+}
+.step-wrap .icon-list{
+  position: absolute;
+  top: 22rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+}
+.step-group .icon-list{
+  left: 21%;
+  width: 79%;
+}
+.step-alone .icon-list{
+  left: 30%;
+  width: 70%;
+}
+.step-wrap .icon-list .iconfont{
+  display: inline-block;
+  font-size: 22rpx;
+  color: #e4bc98;
+}
+.step-group .icon-list .iconfont{
+  margin-right: 28%;
+}
+.step-alone .icon-list .iconfont{
+  margin-right: 44%;
+}
+.text-list{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2%;
+}
+.text-item{
+  text-align: center;
+}
+.text-item .iconfont{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 46rpx;
+  color: #fe6100;
+}
+.text-item .text{
+  display: block;
+  line-height: 26rpx;
+  text-align: center;
+  font-size: 20rpx;
+}
+.divider{
+  width: 100%;
+  height: 10rpx;
+  background-color: #f6f6f6;
+}
+.class-wrap{
+  padding: 40rpx;
+  background-color: #fff;
+}
+.class-top{
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #eee;
+}
+.class-title{
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 32rpx;
+}
+.class-info{
+  margin: 20rpx 0 24rpx 0;
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.class-info .dot{
+  margin: 0 6rpx;
+}
+.class-price{
+  margin-top: 30rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: right;
+  font-size: 28rpx;
+}
+.class-price text{
+  margin-left: 20rpx;
+}
+.class-price .tuan-price{
+  color: #cb0633;
+}
+.block-title{
+  padding: 30rpx 40rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 28rpx;
+  background-color: #f6f6f6;
+}
+.block-title .star{
+  color: red;
+}
+.block-content{
+  padding: 20rpx 40rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #666;
+  background-color: #fff;
+}
+.block-content button{
+  padding: 0;
+  width: 100%;
+  line-height: 50rpx;
+  text-align: left;
+  font-size: 30rpx;
+  color: #666;
+  background-color: #fff;
+  border-radius: none;
+}
+.block-content input{
+  width: 100%;
+  font-size: 30rpx;
+  color: #666;
+}
+button:after{
+  border: none;
+}
+.block-content{
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  display: flex;
+  justify-content: flex-start;
+}
+.left .iconfont{
+  margin-right: 10rpx;
+  font-size: 50rpx;
+  color: #1fb424;
+}
+.left .text{
+  font-size: 30rpx;
+  color: #000;
+}
+.right{
+  font-size: 34rpx;
+  color: #f48140;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.slide-wrap{
+  position: relative;
+  width: 100%;
+  height: 50rpx;
+  background-color: #fff4f2;
+  overflow: hidden;
+}
+.slide-list{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rpx;
+}
+.slide-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.slide-item image{
+  margin-right: 10rpx;
+  width: 34rpx;
+  border-radius: 34rpx;
+}
+.slide-item text{
+  margin: 0 6rpx;
+  font-size: 30rpx;
+  color: #bf9982;
+}
+.footer-wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 40rpx;
+  background-color: #fff;
+}
+.footer-price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price-top{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.price-top .big{
+  font-weight: bold;
+  font-size: 38rpx;
+  color: #ff1323;
+}
+.price-top .small{
+  margin: 6rpx 0 0 10rpx;
+  font-size: 24rpx;
+  color: #666;
+  text-decoration: line-through;
+}
+.price-bottom{
+  font-size: 24rpx;
+  color: #666;
+}
+.footer-btn{
+  width: 40%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #ff650d, #ffa74d);
+  background: -o-linear-gradient(left, #ff650d, #ffa74d);
+  background: -moz-linear-gradient(left, #ff650d, #ffa74d);
+  background: linear-gradient(left, #ff650d, #ffa74d);
+  border-radius: 10rpx;
+}

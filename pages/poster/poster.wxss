@@ -1,0 +1,85 @@
+.container {
+  padding: 20rpx 3% 0;
+  height: 100vh;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+.poster-title{
+  height: 46rpx;
+  line-height: 46rpx;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  color: red;
+}
+.poster-title .iconfont{
+  transform: rotate(180deg);
+}
+.poster-img{
+  margin: 20rpx 0;
+  text-align: center;
+}
+.poster-img image{
+  border: 1px solid #eee;
+}
+.tip{
+  margin-bottom: 10rpx;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #fa9006;
+}
+.btn{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #f3fff1;
+  background-color: #fa9006;
+  border-radius: 40rpx;
+}
+.open-btn{
+  margin: 0 auto 30rpx;
+  width: 80%;
+}
+.popup-outer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 1;
+}
+.popup-inner-middle{
+  padding: 20rpx 20rpx 0 0;
+  width: 75%;
+  border: 10rpx solid #feb647;
+  border-radius: 20rpx;
+}
+.popup-close{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background-color: #feb647;
+  border-radius: 40rpx;
+}
+.popup-content{
+  padding: 20rpx 40rpx 40rpx;
+}
+.popup-content view{
+  text-align: left;
+  line-break: 36rpx;
+  font-size: 26rpx;
+}
+.close-btn{
+  margin-top: 40rpx;
+  width: 60%;
+}

@@ -1,0 +1,36 @@
+<!--class.wxml-->
+<view class="container">
+  <view class="current-class" bindtap="openClass">
+    孩子年级 : {{currentClass}}<text class="iconfont icon-xiajiantou"></text>
+  </view>
+
+  <view class="tip">温馨提示：本课程可支持Win7及以上电脑、苹果电脑</view>
+
+  <view class='class-wrap' bindtap="toPageOrder">
+    <view class='class-top'>
+      <view class='class-left'>
+        <view class='class-title'>{{currentTitle}}</view>
+        <view class='class-info'>7月30日开班<text class="dot">·</text>每晚19:00开课<text class="dot">·</text>一天一课</view>
+      </view>
+      <text class="class-right iconfont icon-youjiantou"></text>
+    </view>
+    <view class='teacher-list'>
+      <view class='teacher'>
+        <image src='{{teacherImg}}'></image>
+        <view class='teacher-info'>
+          <text class='name'>{{teacherName}}</text>
+          <text class='position'>{{teacherPosition}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 弹出框 -->
+<view class='popup-outer' hidden="{{showPopup}}" bindtap="closePopup">
+  <view class='popup-inner-middle' animation="{{animation}}">
+    <view class='popup-item' catchtap="stayPopup">请选择孩子年龄</view>
+    <view class='popup-item' data-id='0' catchtap="closeClass">6岁-9岁(低年级)</view>
+    <view class='popup-item' data-id='1' catchtap="closeClass">9岁-16岁(高年级)</view>
+  </view>
+</view>
