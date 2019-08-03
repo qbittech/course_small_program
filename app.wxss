@@ -1,6 +1,10 @@
 /**app.wxss**/
 @import "static/style/iconfont.wxss";
 
+.da{
+  color: red;
+}
+
 /* 重置默认样式 */
 button:after{
   border: none;
