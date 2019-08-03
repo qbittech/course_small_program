@@ -70,13 +70,21 @@
 
   <!-- 手机号码 -->
   <view class='block'>
-    <view class='block-title'>家长手机号</view>
+    <view class='block-title'>家长手机号<text class='star'>*</text></view>
     <view class='block-content'>
       <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if="{{!hasToken}}">请输入手机号，仅用于班主任家访</button>
-      <view wx:else>
-        <input type='number' placeholder='请输入手机号，仅用于班主任家访' wx:if="{{hasPhoneNumber}}" value='{{phoneNumber}}' />
+      <view style='width: 100%;' wx:else>
+        <input type='number' placeholder='请输入手机号，仅用于班主任家访' wx:if="{{hasPhoneNumber}}" value='{{phoneNumber}}' bindinput='bindPhoneNumber' />
         <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" wx:else>请输入手机号，仅用于班主任家访</button>
       </view>
+    </view>
+  </view>
+
+  <!-- 联系地址 -->
+  <view class='block'>
+    <view class='block-title'>联系地址<text class='star'>*</text></view>
+    <view class='block-content'>
+      <input type='text' placeholder='请输入联系地址，用于寄送礼品' value='' bindinput='bindAddress' />
     </view>
   </view>
 

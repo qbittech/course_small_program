@@ -52,7 +52,6 @@
   line-height: 26rpx;
   text-align: center;
   font-size: 20rpx;
-  color: #666;
 }
 .divider{
   width: 100%;
@@ -77,7 +76,7 @@
   height: 26rpx;
   line-height: 26rpx;
   font-size: 26rpx;
-  color: #999;
+  color: #666;
 }
 .class-info .dot{
   margin: 0 6rpx;
@@ -91,7 +90,6 @@
 }
 .class-price text{
   margin-left: 20rpx;
-  color: #000;
 }
 .class-price .tuan-price{
   color: #cb0633;
@@ -101,8 +99,10 @@
   height: 28rpx;
   line-height: 28rpx;
   font-size: 28rpx;
-  color: #666;
   background-color: #f6f6f6;
+}
+.block-title .star{
+  color: red;
 }
 .block-content{
   padding: 20rpx 40rpx;
@@ -117,14 +117,14 @@
   line-height: 50rpx;
   text-align: left;
   font-size: 30rpx;
-  color: #999;
+  color: #666;
   background-color: #fff;
   border-radius: none;
 }
 .block-content input{
   width: 100%;
   font-size: 30rpx;
-  color: #999;
+  color: #666;
 }
 button:after{
   border: none;
@@ -215,12 +215,12 @@ button:after{
 .price-top .small{
   margin: 6rpx 0 0 10rpx;
   font-size: 24rpx;
-  color: #acacac;
+  color: #666;
   text-decoration: line-through;
 }
 .price-bottom{
   font-size: 24rpx;
-  color: #999;
+  color: #666;
 }
 .footer-btn{
   width: 40%;

@@ -48,28 +48,12 @@
   content: "\e63c";
 }
 
-.icon-kechengdingzhi:before {
-  content: "\e63b";
-}
-
 .icon-xiajiantou:before {
   content: "\e61f";
 }
 
-.icon-pingtaiguanli:before {
-  content: "\e603";
-}
-
-.icon-huangguanguanjundiyihuiyuan:before {
-  content: "\e61a";
-}
-
 .icon-tianjiayonghu:before {
   content: "\e63d";
-}
-
-.icon-ketang:before {
-  content: "\e640";
 }
 
 .icon-lianximaijia:before {

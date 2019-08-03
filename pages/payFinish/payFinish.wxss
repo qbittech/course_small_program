@@ -29,7 +29,7 @@
 }
 .success-course .group{
   font-size: 26rpx;
-  color: #999;
+  color: #666;
 }
 .success-right{
   position: absolute;
@@ -189,21 +189,6 @@
   text-align: center;
   font-size: 30rpx;
   color: #559bf1;
-}
-.popup-content{
-  padding-top: 30rpx;
-  text-align: center;
-}
-.popup-content image{
-  margin-bottom: 20rpx;
-  width: 50%;
-}
-.popup-notice{
-  margin-bottom: 20rpx;
-  padding: 0 5%;
-  line-height: 38rpx;
-  font-size: 28rpx;
-  color: #333;
 }
 .tip{
   margin-top: 20rpx;

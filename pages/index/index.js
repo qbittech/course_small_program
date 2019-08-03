@@ -34,12 +34,26 @@ Page({
     showAlone: true,
 
     swiperData: '',
-    indicatorDots: false
+    indicatorDots: false,
+    system: '',
+    isIOS: false
   },
 
   onLoad: function () {
     var _this = this;
     var token = wx.getStorageSync('token');
+
+    // 获取系统信息
+    // wx.getSystemInfo({
+    //   success(res) {
+    //     if (res.system.indexOf('iOS') != -1) {
+    //       _this.setData({
+    //         isIOS: true,
+    //         system: res.system
+    //       })
+    //     }
+    //   }
+    // })
     
     if (token) {
       // 判断是否已经购买
@@ -119,7 +133,7 @@ Page({
       success(res) {
         console.log('拼团', res)
         _this.setData({
-          endTime: res.data.data.end*1000,
+          endTime: res.data.data.end * 1000,
           groupId: res.data.data.id,
           groupImg: res.data.data.headimgurl,
           groupName: res.data.data.nickname
@@ -240,6 +254,7 @@ Page({
 
   // 跳转到选择课程页面
   toPageClass(e) {
+    // 获取用户信息
     wx.getUserInfo({
       success: function (res) {
         app.globalData.iv = res.iv;
@@ -274,7 +289,7 @@ Page({
 
     if(id == 'alone'){
       wx.setStorageSync('isGroup', 'no')
-      wx.setStorageSync('type', 1)
+      wx.setStorageSync('type', 2)
       wx.setStorageSync('groupId', 0)
     } else if (id == 'group1'){
       wx.setStorageSync('isGroup', 'yes')

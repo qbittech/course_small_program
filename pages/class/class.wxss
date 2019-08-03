@@ -15,7 +15,7 @@
 .current-class .iconfont{
   margin-left: 10rpx;
   font-size: 24rpx;
-  color: #999;
+  color: #666;
 }
 .tip{
   padding: 20rpx 0;
@@ -23,7 +23,7 @@
   line-height: 22rpx;
   text-align: center;
   font-size: 22rpx;
-  color: #999;
+  color: #666;
 }
 .class-wrap{
   margin: 0 3%;
@@ -46,7 +46,7 @@
   height: 26rpx;
   line-height: 26rpx;
   font-size: 26rpx;
-  color: #999;
+  color: #666;
 }
 .class-info .dot{
   margin: 0 6rpx;
@@ -54,7 +54,7 @@
 .class-right{
   margin-top: 12rpx;
   font-size: 40rpx;
-  color: #999;
+  color: #666;
 }
 .teacher-list{
   display: flex;
@@ -69,6 +69,7 @@
   margin-right: 14rpx;
   width: 80rpx;
   height: 80rpx;
+  border: 1px solid #eee;
   border-radius: 100%;
 }
 .teacher-info{
@@ -82,14 +83,13 @@
   height: 30rpx;
   line-height: 30rpx;
   font-size: 30rpx;
-  color: #333;
 }
 .teacher-info .position{
   display: block;
   height: 26rpx;
   line-height: 26rpx;
   font-size: 26rpx;
-  color: #999;
+  color: #666;
 }
 .popup-outer{
   display: flex;
@@ -110,7 +110,6 @@
   line-height: 32rpx;
   text-align: center;
   font-size: 32rpx;
-  color: #333;
   border-bottom: 1px solid #eee;
 }
 .popup-item:last-child{

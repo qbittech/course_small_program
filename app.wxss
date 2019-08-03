@@ -44,14 +44,12 @@ button:after{
   font-weight: bold;
   font-size: 40rpx;
   text-align: center;
-  color: #000;
 }
 .popup-close{
   position: absolute;
   top: 0;
   right: 0;
   font-size: 40rpx;
-  color: #666;
 }
 .popup-button{
   width: 100%;

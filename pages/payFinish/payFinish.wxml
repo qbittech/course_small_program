@@ -53,7 +53,7 @@
   <view class='block'>
     <view class='block-title red'>开课前务必要添加老师哦</view>
     <view class='btn-list'>
-      <button class='btn long' open-type="contact">去添加班主任老师</button>
+      <button class='btn long' open-type="contact">点击回复数字0添加班主任老师</button>
     </view>
   </view>
   <view class='block'>
@@ -67,5 +67,5 @@
   <!-- 玩法说明 -->
   <view class='notice' bindtap="toPageExplain">拼团玩法说明<text class="iconfont icon-youjiantou"></text></view>
 
-  <view class='tip'>如有编程礼盒，将在开课前1周左右寄出</view>
+  <!-- <view class='tip'>如有编程礼盒，将在开课前1周左右寄出</view> -->
 </view>

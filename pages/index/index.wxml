@@ -2,7 +2,7 @@
 <view class="container">
   <!-- 海报 -->
   <image class='poster' src='{{headImg}}' mode="widthFix"></image>
-  <view class='slogan'>现在报名，抢占7月28日暑假上课名额</view>
+  <view class='slogan'>现在报名，抢占8月10日暑假上课名额</view>
 
   <!-- 拼团价 -->
   <view class='course-title-wrap'>
@@ -96,11 +96,9 @@
     </view>
   </view>
 
-  <view class='divider'></view>
-  <!-- 礼盒 -->
+  <!-- 赠送 -->
   <image class='gift' src='../../static/image/gift.jpg' mode="widthFix"></image>
 
-  <view class='divider'></view>
   <!-- 为什么学编程 -->
   <view class='course-content-title'>
     <text class='big'>为什么学编程</text>
@@ -111,7 +109,7 @@
   <view class='course-reason'>
     <view class='reason-item'>
       <view class='reason-icon'>
-        <text class="iconfont icon-kechengdingzhi"></text>
+        <image src='../../static/image/icon_teach.png' mode="widthFix"></image>
       </view>
       <view class='reason-title'>定制化教学</view>
       <view class='reason-desc'>根据孩子情况量身</view>
@@ -119,7 +117,7 @@
     </view>
     <view class='reason-item'>
       <view class='reason-icon'>
-        <text class="iconfont icon-ketang"></text>
+        <image src='../../static/image/icon_platform.png' mode="widthFix"></image>
       </view>
       <view class='reason-title'>趣味课堂</view>
       <view class='reason-desc'>游戏化教学，让课堂</view>
@@ -127,7 +125,7 @@
     </view>
     <view class='reason-item'>
       <view class='reason-icon'>
-        <text class="iconfont icon-pingtaiguanli"></text>
+        <image src='../../static/image/icon_review.png' mode="widthFix"></image>
       </view>
       <view class='reason-title'>多样化复习平台</view>
       <view class='reason-desc'>方便孩子巩固学习，</view>
@@ -135,7 +133,7 @@
     </view>
     <view class='reason-item'>
       <view class='reason-icon'>
-        <text class="iconfont icon-huangguanguanjundiyihuiyuan"></text>
+        <image src='../../static/image/icon_brand.png' mode="widthFix"></image>
       </view>
       <view class='reason-title'>强大的品牌</view>
       <view class='reason-desc'>粤嵌10余年品牌，</view>
@@ -270,16 +268,16 @@
     <text class='small'>上课方式灵活便利</text>
   </view>
   <view class='question-item'>
-    <view class='question-title'>第2课开课前无条件退款</view>
-    <view class='question-answer'>入门课总共5节课，编程教辅礼盒将于开课前1周陆续寄出，若礼盒已寄出则无法退款。</view>
+    <view class='question-title'>有电脑（需要摄像头＋麦克风）就能上课</view>
+    <view class='question-answer'>下载学生客户端就能上课，支持xp及以上电脑，苹果。</view>
   </view>
   <view class='question-item'>
-    <view class='question-title'>礼盒物流查询</view>
-    <view class='question-answer'>编程教辅礼盒将于开课前1周陆续寄出，请注意查看礼盒的物流信息。</view>
+    <view class='question-title'>客户端安装问题</view>
+    <view class='question-answer'>如果客户端安装有问题，可以寻求老师在线帮助。</view>
   </view>
   <view class='question-item'>
-    <view class='question-title'>有电脑、iPad就能上课</view>
-    <view class='question-answer'>下载学生客户端就能上课，支持Win7及以上电脑、苹果电脑、iPad。</view>
+    <view class='question-title'>电脑设备问题</view>
+    <view class='question-answer'>为了保证和孩子更好互动和引导孩子，上课前需要准备摄像头和麦克风。</view>
   </view>
 
   <!-- 可获服务 -->
@@ -290,19 +288,19 @@
       <view class='p'>即可获得以下全部服务</view>
       <view class='service-item'>
         <text class="iconfont icon-gou"></text>
-        <text class='notice'>5次课程，世界机器人冠军领衔授课</text>
+        <text class='notice'>4次课程，老师在线面对面教学</text>
       </view>
       <view class='service-item'>
         <text class="iconfont icon-gou"></text>
-        <text class='notice'>专属陪学，微信在线答疑，问题不过夜</text>
+        <text class='notice'>专属陪伴，微信在线答疑</text>
       </view>
       <view class='service-item'>
         <text class="iconfont icon-gou"></text>
-        <text class='notice'>30-45分钟一节课，孩子坐得住吃得透</text>
+        <text class='notice'>小班教学，能够关注每一个孩子的学习</text>
       </view>
       <view class='service-item'>
         <text class="iconfont icon-gou"></text>
-        <text class='notice'>孩子做出刷爆朋友圈的编程作品</text>
+        <text class='notice'>孩子能够做出刷爆朋友圈的编程作品</text>
       </view>
     </view>
   </view>
@@ -351,7 +349,7 @@
             <text class='text'>7天无理由退</text>
           </view>
         </view>
-        <view class='activity-notice'>日常班开课7天内不满意可全额退款，寒暑假班开课2天内不满意可全额退款。</view>
+        <view class='activity-notice'>日常班开课7天内不满意可全额退款。</view>
       </view>
       <view class='activity-item'>
         <view class='activity-title'>

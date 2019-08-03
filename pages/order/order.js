@@ -11,7 +11,8 @@ Page({
     hasPhoneNumber: false,
     phoneNumber: '',
     swiperData: '',
-    indicatorDots: false
+    indicatorDots: false,
+    address: ''
   },
 
   onLoad: function() {
@@ -136,13 +137,38 @@ Page({
     })
   },
 
+  // 实时获取手机号码
+  bindPhoneNumber(e){
+    this.setData({
+      phoneNumber: e.detail.value
+    })
+  },
+
+  // 实时获取联系地址
+  bindAddress(e) {
+    this.setData({
+      address: e.detail.value
+    })
+  },
+
   // 提交订单
   submitOrder(){
     var _this = this;
 
+    // 判断手机是否为空
     if (_this.data.phoneNumber == ''){
       wx.showToast({
-        title: '手机不能为空',
+        title: '请输入手机',
+        icon: 'error',
+        duration: 2000
+      })
+      return
+    }
+
+    // 判断地址是否为空
+    if (_this.data.address == '') {
+      wx.showToast({
+        title: '请输入地址',
         icon: 'error',
         duration: 2000
       })
@@ -159,8 +185,10 @@ Page({
         token: wx.getStorageSync('token'),
         type: wx.getStorageSync('type'),
         group: wx.getStorageSync('groupId'),
+        // money: _this.data.finalPrice,
         money: 0.01,
         phone: _this.data.phoneNumber,
+        address: _this.data.address,
         className: _this.data.courseTitle,
         teacher_id: app.globalData.teacherId
       },
@@ -179,7 +207,7 @@ Page({
             },
             fail(res) { 
               wx.showToast({
-                title: '支付失败，请重新尝试',
+                title: '请重新支付',
                 icon: 'error',
                 duration: 2000
               })

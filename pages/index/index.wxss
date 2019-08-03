@@ -54,19 +54,18 @@
   margin-top: 16rpx;
   height: 24rpx;
   font-size: 24rpx;
-  color: #999;
+  color: #666;
   text-decoration: line-through;
 }
 .price-right{
   margin-top: 16rpx;
   height: 24rpx;
   font-size: 24rpx;
-  color: #999;
+  color: #666;
 }
 .course-title{
   height: 38rpx;
   font-size: 38rpx;
-  color: #333;
 }
 .course-notice{
   display: flex;
@@ -93,12 +92,11 @@
   height: 36rpx;
   line-height: 36rpx;
   font-size: 36rpx;
-  color: #999;
+  color: #666;
 }
 .group-num{
   padding: 30rpx 5%;
   font-size: 26rpx;
-  color: #333;
   background-color: #fff;
 }
 .join-group{
@@ -135,8 +133,7 @@
 .join-group-left text{
   margin-left: 10rpx;
   line-height: 80rpx;
-  font-size: 24rpx;
-  color: #333;
+  font-size: 28rpx;
 }
 .join-group-right{
   display: flex;
@@ -156,7 +153,6 @@
   height: 22rpx;
   line-height: 22rpx;
   font-size: 22rpx;
-  color: #333;
 }
 .lest-num .orange{
   color: #ff9f2f;
@@ -165,7 +161,7 @@
   height: 24rpx;
   line-height: 24rpx;
   font-size: 24rpx;
-  color: #999;
+  color: #666;
 }
 .join-group-button{
   height: 56rpx;
@@ -222,7 +218,6 @@
   line-height: 26rpx;
   text-align: center;
   font-size: 20rpx;
-  color: #666;
 }
 .teacher-brief-wrap{
   padding: 30rpx 5%;
@@ -233,7 +228,6 @@
   height: 30rpx;
   line-height: 30rpx;
   font-size: 30rpx;
-  color: #333;
 }
 .teacher-brief{
   display: flex;
@@ -246,6 +240,7 @@
 .teacher-brief-left image{
   width: 80rpx;
   height: 80rpx;
+  border: 1px solid #eee;
   border-radius: 100%;
 }
 .teacher-name{
@@ -260,19 +255,18 @@
   height: 30rpx;
   line-break: 30rpx;
   font-size: 30rpx;
-  color: #000;
 }
 .teacher-name .title{
   height: 26rpx;
   line-break: 26rpx;
   font-size: 26rpx;
-  color: #999;
+  color: #666;
 }
 .teacher-brief-right{
   height: 80rpx;
   line-height: 80rpx;
   font-size: 36rpx;
-  color: #999;
+  color: #666;
 }
 .gift{
   width: 100%;
@@ -289,27 +283,25 @@
 }
 .reason-icon{
   margin: 0 auto;
+  padding-top: 24rpx;
   width: 100rpx;
-  height: 100rpx;
-  line-height: 100rpx;
+  height: 76rpx;
   text-align: center;
   background-color: #1281f4;
   border-radius: 100%;
 }
-.reason-icon .iconfont{
-  font-size: 50rpx;
-  color: #fff;
+.reason-icon image{
+  width: 60%;
 }
 .reason-title{
   margin: 14rpx 0;
   height: 32rpx;
   line-height: 32rpx;
   font-size: 32rpx;
-  color: #333;
 }
 .reason-desc{
   line-height: 32rpx;
-  font-size: 22rpx;
+  font-size: 24rpx;
   color: #666;
 }
 .all-study{
@@ -348,9 +340,6 @@
 }
 .study-title{
   color: #1281f4;
-}
-.study-desc{
-  color: #333;
 }
 .all-study-bottom{
   margin-top: 50rpx;
@@ -432,7 +421,6 @@
 .standard-right text{
   line-height: 40rpx;
   font-size: 30rpx;
-  color: #333;
 }
 .standard-right .padding-left{
   padding-left: 16rpx;
@@ -451,7 +439,7 @@
   line-height: 26rpx;
   font-weight: bold;
   font-size: 26rpx;
-  color: #04c8de;
+  color: #1281f4;
   letter-spacing: 4rpx;
 }
 .course-name{
@@ -517,7 +505,6 @@
   height: 28rpx;
   line-height: 28rpx;
   font-size: 28rpx;
-  color: #666;
 }
 .evaluation-list{
   margin-bottom: 20rpx;
@@ -530,7 +517,6 @@
   padding: 16rpx 26rpx;
   text-align: center;
   font-size: 26rpx;
-  color: #333;
   border: 1px solid #eee;
   border-radius: 30rpx;
 }
@@ -552,7 +538,6 @@
 .question-answer{
   line-height: 36rpx;
   font-size: 30rpx;
-  color: #333;
 }
 .service-wrap{
   position: relative;
@@ -584,7 +569,6 @@
   height: 32rpx;
   line-height: 32rpx;
   font-size: 32rpx;
-  color: #333;
   border-bottom: 1px solid #eee;
 }
 .service-item{
@@ -675,7 +659,7 @@
   height: 46rpx;
   line-height: 46rpx;
   font-size: 46rpx;
-  color: #999;
+  color: #666;
 }
 .footer-btn .big{
   margin-bottom: 8rpx;
@@ -692,7 +676,7 @@
   color: #000;
 }
 .footer-btn .gray{
-  color: #999;
+  color: #666;
 }
 .footer-btn .white{
   color: #fff;
@@ -718,9 +702,6 @@
   margin-right: 8rpx;
   color: #ff9f2f;
 }
-.title-left text{
-  color: #000;
-}
 .title-right{
   color: #6981c1;
 }
@@ -728,7 +709,7 @@
   margin: 16rpx 0;
   line-height: 40rpx;
   font-size: 28rpx;
-  color: #999;
+  color: #666;
 }
 .alone-content text{
   display: block;
@@ -737,5 +718,4 @@
   line-height: 36rpx;
   text-align: center;
   font-size: 28rpx;
-  color: #333;
 }
